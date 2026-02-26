@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 9</title>
+<style>
+body{font-family:Arial;text-align:center;padding:40px;background:#f4f6f8;}
+.container{max-width:500px;margin:auto;background:white;padding:30px;border-radius:10px;}
+input,button{padding:10px;margin-top:10px;width:80%;}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Final Riddle</h2>
+<p>The more you take, the more you leave behind. What am I?</p>
+<input id="answer" type="text">
+<button onclick="check()">Submit</button>
+</div>
+<script>
+function check(){
+ let ans=document.getElementById("answer").value.toLowerCase();
+ if(ans==="footsteps"){
+   alert("🎉 Congratulations! You completed the game!");
+   window.location="index.html";
+ } else{
+   alert("Wrong answer! Try again.");
+ }
+}
+</script>
+</body>
+</html>
